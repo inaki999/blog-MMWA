@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | mmwa.es</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap');
+        
+        :root { 
+            --primary: #00e676; 
+            --bg-dark: #0f0f1a; 
+            --bg-card: #1e1e30; 
+            --text-main: #f8f9fa; 
+            --text-dim: #cfd8dc; 
+            --accent: #00bfa5; 
+        }
+
+        body { 
+            margin: 0; 
+            font-family: 'Roboto', sans-serif; 
+            color: var(--text-main); 
+            background: var(--bg-dark); 
+            line-height: 1.8; 
+        }
+        
+        /* NAVIGATION */
+        header { 
+            position: fixed; top: 0; width: 100%; display: flex; justify-content: space-between; align-items: center; 
+            padding: 15px 5%; background: rgba(15, 15, 26, 0.95); backdrop-filter: blur(12px); 
+            z-index: 1000; border-bottom: 1px solid rgba(255,255,255,0.05); box-sizing: border-box; 
+        }
+        .logo { font-family: 'Poppins', sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--primary); text-decoration: none; }
+        nav a { color: var(--text-main); text-decoration: none; font-weight: 500; margin-left: 25px; font-size: 0.9rem; transition: 0.3s; text-transform: uppercase; }
+        nav a:hover { color: var(--primary); }
+
+        .container { max-width: 800px; margin: 0 auto; padding: 140px 20px 80px; }
+        
+        h1 { font-family: 'Poppins', sans-serif; font-size: 3rem; color: var(--primary); margin-bottom: 30px; text-align: center; }
+        
+        .content-section { background: var(--bg-card); padding: 40px; border-radius: 24px; border: 1px solid rgba(255,255,255,0.05); margin-bottom: 30px; }
+        
+        h2 { color: var(--accent); font-family: 'Poppins', sans-serif; margin-top: 0; }
+        p { color: var(--text-dim); font-size: 1.1rem; }
+
+        .highlight-box { border-left: 4px solid var(--primary); padding-left: 20px; font-style: italic; color: var(--text-main); margin: 25px 0; }
+
+        /* FOOTER UNIFICADO */
+        footer { background: #080810; padding: 60px 20px; text-align: center; border-top: 1px solid #222; margin-top: 50px; }
+        .footer-links { margin-bottom: 25px; }
+        .footer-links a { color: #888; text-decoration: none; margin: 0 15px; font-size: 0.85rem; }
+        .footer-links a:hover { color: var(--primary); }
+        .copyright { color: #444; font-size: 0.8rem; margin-top: 20px; }
+
+        @media (max-width: 600px) { h1 { font-size: 2.2rem; } .container { padding-top: 100px; } }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">MMWA</a>
+    <nav>
+        <a href="TopApps.html">Apps</a>
+        <a href="Tips.html">Tips</a>
+        <a href="Guides.html">Guides</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>About Me</h1>
+    
+    <div class="content-section">
+        <h2>Who I Am</h2>
+        <p>Hello! Welcome to <strong>mmwa.es</strong> (Make Money With Apps). I am an independent researcher and digital economy enthusiast dedicated to finding the most efficient ways to monetize spare time using only a smartphone.</p>
+        
+        <div class="highlight-box">
+            "I started this project because I was tired of 'get rich quick' scams. My goal is to provide the honest truth about which apps actually pay and which ones are a waste of time."
+        </div>
+    </div>
+
+    <div class="content-section">
+        <h2>My Mission</h2>
+        <p>My mission is simple: To empower you by providing verified reviews, expert tips, and step-by-step guides for the digital gig economy. I personally test the platforms I recommend to ensure they meet high standards for transparency, payout reliability, and user security.</p>
+    </div>
+
+    <div class="content-section">
+        <h2>Why Trust mmwa.es?</h2>
+        <p>Unlike large corporate blogs, I don't just list apps for clicks. I dive deep into the terms of service, payout thresholds, and real user feedback. Whether you are looking for passive income, survey rewards, or micro-tasking opportunities, I give you the tools to succeed safely and avoid common pitfalls.</p>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-links">
+        <a href="About.html">About Us</a>
+        <a href="Contact.html">Contact Us</a>
+        <span style="color: #333; margin: 0 5px;">|</span>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="cookies.html">Cookie Policy</a>
+        <a href="terms.html">Terms of Use</a>
+    </div>
+    <p class="copyright">© 2026 mmwa.es | All Rights Reserved. <br>
+    <small>Your definitive resource for the digital gig economy.</small></p>
+</footer>
+
+</body>
+</html>
