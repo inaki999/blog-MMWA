@@ -1,108 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Guides to Make Money with Apps</title>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500;700&display=swap');
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Guides 2026 | mmwa.es</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap');
+        
+        :root { 
+            --primary: #00e676; 
+            --bg-dark: #0f0f1a; 
+            --bg-card: #1e1e30; 
+            --text-main: #f8f9fa; 
+            --text-dim: #cfd8dc; 
+            --accent: #00bfa5; 
+            --gold: #ffc107;
+        }
 
-  body { margin:0; font-family: 'Roboto', sans-serif; color:#eee; background: linear-gradient(135deg, #121212, #1a1a2e); }
-  header { background: linear-gradient(135deg, #1f1f38, #121212); color:#00e676; padding:30px 20px; text-align:center; box-shadow:0 4px 15px rgba(0,0,0,0.5);}
-  header h1 { margin:0; font-family:'Poppins',sans-serif; font-size:2.8em; }
+        body { 
+            margin: 0; 
+            font-family: 'Roboto', sans-serif; 
+            color: var(--text-main); 
+            background: var(--bg-dark); 
+            line-height: 1.8; 
+        }
+        
+        header { 
+            position: fixed; top: 0; width: 100%; display: flex; justify-content: space-between; align-items: center; 
+            padding: 15px 5%; background: rgba(15, 15, 26, 0.95); backdrop-filter: blur(12px); 
+            z-index: 1000; border-bottom: 1px solid rgba(255,255,255,0.05); box-sizing: border-box; 
+        }
+        .logo { font-family: 'Poppins', sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--primary); text-decoration: none; }
+        nav a { color: var(--text-main); text-decoration: none; font-weight: 500; margin-left: 25px; font-size: 0.9rem; transition: 0.3s; text-transform: uppercase; }
+        nav a:hover { color: var(--primary); }
 
-  nav { display:flex; justify-content:center; gap:30px; padding:15px 0; background: rgba(30,30,50,0.95); box-shadow:0 2px 8px rgba(0,0,0,0.5); }
-  nav a { color:#00e676; text-decoration:none; font-weight:600; font-size:1.1em; transition: color 0.3s; }
-  nav a:hover { color:#76ff03; }
+        .container { max-width: 900px; margin: 0 auto; padding: 140px 20px 80px; }
+        
+        .hero-guide { text-align: center; margin-bottom: 60px; }
+        .hero-guide h1 { font-family: 'Poppins', sans-serif; font-size: clamp(2.2rem, 5vw, 3.2rem); color: var(--primary); margin: 0; line-height: 1.1; }
+        .hero-guide p { color: var(--text-dim); font-size: 1.1rem; margin-top: 15px; }
 
-  .container { max-width:1000px; margin:50px auto; padding:20px; position:relative; }
+        .pathway { display: grid; gap: 45px; position: relative; }
+        
+        .guide-box { 
+            background: var(--bg-card); 
+            border-radius: 24px; 
+            padding: 40px; 
+            border: 1px solid rgba(255,255,255,0.05); 
+            position: relative;
+            transition: 0.3s ease;
+        }
+        .guide-box:hover { border-color: var(--primary); transform: translateY(-5px); }
 
-  .post {
-    background: rgba(30,30,50,0.85);
-    padding:20px;
-    margin-bottom:20px;
-    border-radius:12px;
-    box-shadow:0 4px 15px rgba(0,0,0,0.5);
-    border-left:6px solid #00bfa5;
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-  .post:hover { transform: translateY(-3px); box-shadow:0 6px 20px rgba(0,0,0,0.6); }
-  .post h2 { font-family:'Poppins',sans-serif; color:#00bfa5; margin-bottom:10px; }
-  .post p { line-height:1.6; }
+        .guide-label { 
+            position: absolute; top: -15px; left: 35px; 
+            background: var(--primary); color: #000; 
+            padding: 4px 18px; border-radius: 20px; 
+            font-weight: 800; font-size: 0.75rem; text-transform: uppercase;
+        }
 
-  /* Rectángulo de anuncio */
-  .ad {
-    position: absolute;
-    top:20px;
-    right:-250px;
-    width:220px;
-    height:400px;
-    background: linear-gradient(135deg,#263238,#37474f);
-    border:2px dashed #00e676;
-    border-radius:12px;
-    color:#00e676;
-    font-weight:bold;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:10px;
-  }
+        .guide-box h2 { font-family: 'Poppins', sans-serif; color: var(--accent); margin: 10px 0 20px 0; font-size: 1.7rem; }
+        .guide-box p { color: var(--text-main); margin-bottom: 20px; }
+        .guide-box ul { padding-left: 20px; color: var(--text-dim); }
+        .guide-box ul li { margin-bottom: 12px; }
+        .guide-box ul li strong { color: var(--primary); }
 
-  footer {
-    text-align:center; padding:25px; background:#1f1f1f; color:#00e676; font-family:'Poppins',sans-serif; margin-top:40px; box-shadow:0 -2px 8px rgba(0,0,0,0.5);
-  }
+        /* AD SPOTS */
+        .ad-placeholder {
+            background: rgba(255, 255, 255, 0.02);
+            border: 2px dashed #2a2a45;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            margin: 20px 0;
+            color: #444;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
 
-  @media(max-width:1024px){ .ad { position:relative; right:auto; top:auto; width:90%; height:auto; margin:20px auto; } }
-</style>
+        .pro-tip {
+            background: rgba(255, 193, 7, 0.1);
+            border-left: 4px solid var(--gold);
+            padding: 20px;
+            margin-top: 25px;
+            border-radius: 0 15px 15px 0;
+        }
+        .pro-tip h4 { color: var(--gold); margin: 0 0 10px 0; text-transform: uppercase; font-size: 0.85rem; }
+
+        .checklist { 
+            background: rgba(0, 230, 118, 0.05); 
+            border-radius: 18px; 
+            padding: 25px; 
+            margin-top: 25px;
+            border: 1px solid rgba(0, 230, 118, 0.2);
+        }
+
+        footer { background: #080810; padding: 60px 20px; text-align: center; border-top: 1px solid #222; margin-top: 80px; }
+        .footer-links a { color: #888; text-decoration: none; margin: 0 15px; font-size: 0.85rem; }
+        .copyright { color: #444; font-size: 0.8rem; margin-top: 20px; }
+
+        @media (max-width: 600px) { .guide-box { padding: 30px 20px; } }
+    </style>
 </head>
 <body>
 
-<header><h1>Guides to Make Money with Apps</h1></header>
-
-<nav>
-  <a href="index.html">Home</a>
-  <a href="TopApps.html">Top Apps</a>
-  <a href="Tips.html">Tips</a>
-</nav>
+<header>
+    <a href="index.html" class="logo">MMWA</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="TopApps.html">Apps</a>
+        <a href="Tips.html">Tips</a>
+    </nav>
+</header>
 
 <div class="container">
+    <section class="hero-guide">
+        <h1>Mastering the Gig Economy</h1>
+        <p>Verified blueprints for digital income scaling in 2026.</p>
+    </section>
+    
+    <div class="pathway">
+        
+        <article class="guide-box">
+            <span class="guide-label">Phase 01: Setup</span>
+            <h2>1. Technical Foundations & Security</h2>
+            <p>Most beginners lose their first $50 due to "High-Risk" flags in payment gateways. You must establish trust with servers from day one.</p>
+            <ul>
+                <li><strong>Verified PayPal Tier 2:</strong> Link a real bank account (Fintechs like Revolut/Wise work) and complete the photo ID check. Non-verified accounts are often limited after the first $200.</li>
+                <li><strong>Dedicated IP Integrity:</strong> Never use a free VPN. Sites like <strong>Prolific</strong> and <strong>UserTesting</strong> track IP reputation. If your IP is shared with scammers, your account will be "shadow-banned."</li>
+                <li><strong>Anti-Phishing Layer:</strong> Use a dedicated physical security key (YubiKey) or Google Authenticator. In 2026, session hijacking is the #1 cause of lost digital earnings.</li>
+            </ul>
+        </article>
 
-  <div class="post">
-    <h2>Guide #1: How to Start with Survey Apps</h2>
-    <p>Sign up with trusted survey apps and complete surveys daily. Use multiple apps for best results.</p>
-  </div>
+        <article class="guide-box">
+            <span class="guide-label">Phase 02: Authority</span>
+            <h2>2. Algorithmic Profile Optimization</h2>
+            <p>Apps don't send tasks randomly; they send them to "High-Quality Respondents."</p>
+            <ul>
+                <li><strong>The Demographic Hack:</strong> Researchers want "decision makers." Ensure your profile reflects your real expertise in IT, Management, or Specialized Hobbies.</li>
+                <li><strong>Micro-Task History:</strong> On sites like <strong>Remotasks</strong> or <strong>Amazon MTurk</strong>, your "Acceptance Rate" must stay above 98%. Rejections are harder to fix than starting fresh.</li>
+            </ul>
+            <div class="pro-tip">
+                <h4>Pro Tip: Hardware Expansion</h4>
+                <p>Having an **Oculus/Meta Quest** or a **Smart Watch** linked to your profile increases your invite rate by 40% for high-paying wearable tech studies.</p>
+            </div>
+        </article>
 
-  <div class="post">
-    <h2>Guide #2: Using Cashback Apps Effectively</h2>
-    <p>Link shopping accounts and check deals. Compare cashback offers before buying.</p>
-  </div>
+        <div class="ad-placeholder">
+            [ High-Interaction Ad Unit - Native Display ]
+        </div>
 
-  <div class="post">
-    <h2>Guide #3: Freelancing on Mobile Apps</h2>
-    <p>Start small with simple tasks. Deliver quality work, build your rating, and gradually take bigger jobs for higher income.</p>
-  </div>
+        <article class="guide-box">
+            <span class="guide-label">Phase 03: Strategy</span>
+            <h2>3. The Stacking Workflow</h2>
+            <p>Passive income isn't enough; you need to layer active tasks on top of passive sensors.</p>
+            <div class="checklist">
+                <h4>The 2026 Daily Stack:</h4>
+                <p>
+                    <strong>Tier 1 (Passive):</strong> Honeygain + Pawns.app running on a low-power laptop.<br>
+                    <strong>Tier 2 (Semi-Active):</strong> Sweatcoin + Stepn for your daily movements.<br>
+                    <strong>Tier 3 (Active):</strong> UserTesting (30 mins) + Prolific (Hourly checks).
+                </p>
+            </div>
+        </article>
 
-  <div class="post">
-    <h2>Guide #4: Selling Photos or Digital Goods</h2>
-    <p>Use apps to sell your photography, artwork, or digital creations. Ensure high quality and check app payment policies.</p>
-  </div>
+        <article class="guide-box">
+            <span class="guide-label">Phase 04: Compliance</span>
+            <h2>4. Tax Management & Global Payouts</h2>
+            <p>Digital income is traceable. In 2026, platforms are required to report earnings over certain thresholds (DAC7 in EU / 1099-K in USA).</p>
+            <ul>
+                <li><strong>VAT/Tax ID Entry:</strong> Enter your tax information early to avoid a 24% - 30% automatic withholding tax on US-based platforms.</li>
+                <li><strong>Currency Exchange Optimization:</strong> Avoid PayPal's internal conversion rates (usually 3-4% fee). Payout in local currency to **Wise** or **Revolut** to save up to $50 for every $1000 earned.</li>
+            </ul>
+        </article>
 
-  <div class="post">
-    <h2>Guide #5: Maximizing Referral Programs</h2>
-    <p>Many apps reward you for referring friends. Share your referral links responsibly and track your bonuses.</p>
-  </div>
+        <article class="guide-box">
+            <span class="guide-label">Phase 05: Longevity</span>
+            <h2>5. Avoiding the "Burnout" & Ban Waves</h2>
+            <p>Platforms perform "Ban Waves" every quarter to remove low-quality users.</p>
+            <ul>
+                <li><strong>Speed Traps:</strong> Don't click through surveys too fast. Algorithms track your "Time per Question." If you are faster than the average reading speed, you will be flagged as a bot.</li>
+                <li><strong>Account Diversity:</strong> Never have two accounts on the same household Wi-Fi for the same app. This is the fastest way to get a permanent IP ban.</li>
+            </ul>
+        </article>
 
-  <div class="post">
-    <h2>Guide #6: Managing Multiple Apps Efficiently</h2>
-    <p>Create a schedule for checking your apps. Track which ones are profitable and avoid wasting time on low-return apps.</p>
-  </div>
+        <div class="ad-placeholder">
+            [ Bottom-Page Conversion Ad Unit ]
+        </div>
 
-  <div class="ad">Ad Space (Google AdSense)</div>
-
+    </div>
 </div>
 
-<footer>© 2026 Make Money Blog</footer>
+<footer>
+    <div class="footer-links">
+        <a href="About.html">About Us</a>
+        <a href="Contact.html">Contact Us</a>
+        <span style="color: #333;">|</span>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+    </div>
+    <p class="copyright">© 2026 mmwa.es | All Rights Reserved. <br>
+    <small>Expert-led research for the modern digital worker.</small></p>
+</footer>
 
 </body>
 </html>
