@@ -1,97 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy</title>
-<style>
-  body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #121212, #1a1a2e);
-    color: #eee;
-  }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | mmwa.es</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap');
 
-  nav {
-    display: flex;
-    gap: 20px;
-    padding: 15px 20px;
-    background: rgba(30,30,50,0.95);
-  }
+        :root {
+            --primary: #00e676;
+            --bg-dark: #0f0f1a;
+            --bg-card: #1e1e30;
+            --text-main: #f8f9fa;
+            --text-dim: #cfd8dc;
+            --accent: #00bfa5;
+        }
 
-  nav a {
-    color: #00e676;
-    text-decoration: none;
-    font-weight: 600;
-  }
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: var(--text-main);
+            background: var(--bg-dark);
+            line-height: 1.8;
+        }
 
-  nav a:hover { color: #76ff03; }
+        /* --- NAVIGATION --- */
+        header {
+            position: fixed; top: 0; width: 100%; display: flex; justify-content: space-between; align-items: center;
+            padding: 15px 5%; background: rgba(15, 15, 26, 0.95); backdrop-filter: blur(12px);
+            z-index: 1000; border-bottom: 1px solid rgba(255,255,255,0.05); box-sizing: border-box;
+        }
 
-  .container {
-    max-width: 900px;
-    margin: 120px auto 50px;
-    padding: 20px;
-    background: rgba(30,30,50,0.8);
-    border-radius: 12px;
-  }
+        .logo { font-family: 'Poppins', sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--primary); text-decoration: none; }
+        
+        nav a { 
+            color: var(--text-main); text-decoration: none; font-weight: 500; 
+            margin-left: 25px; font-size: 0.9rem; transition: 0.3s; text-transform: uppercase; 
+        }
+        nav a:hover { color: var(--primary); }
 
-  h1 { color: #00bfa5; text-align: center; margin-bottom: 25px; }
+        /* --- CONTENT CONTAINER --- */
+        .container {
+            max-width: 850px;
+            margin: 140px auto 60px;
+            padding: 40px;
+            background: var(--bg-card);
+            border-radius: 24px;
+            border: 1px solid rgba(255,255,255,0.05);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
 
-  h2 { color: #00e676; margin-top: 20px; }
+        h1 { font-family: 'Poppins', sans-serif; color: var(--primary); margin-bottom: 30px; text-align: center; }
+        h2 { font-family: 'Poppins', sans-serif; color: var(--accent); margin-top: 35px; border-bottom: 1px solid rgba(0, 191, 165, 0.2); padding-bottom: 10px; }
+        p, li { color: var(--text-dim); font-size: 1rem; }
+        ul { padding-left: 20px; margin-bottom: 20px; }
+        li { margin-bottom: 10px; }
 
-  p, li { line-height: 1.6; margin-bottom: 15px; }
+        .highlight-box {
+            background: rgba(0, 230, 118, 0.05);
+            border-left: 4px solid var(--primary);
+            padding: 20px;
+            margin: 20px 0;
+            font-style: italic;
+        }
 
-  ul { padding-left: 20px; }
+        /* --- FOOTER UNIFICADO CON HOVER VERDE --- */
+        footer {
+            background: #080810;
+            padding: 60px 20px;
+            text-align: center;
+            border-top: 1px solid #222;
+            margin-top: 50px;
+        }
 
-  footer {
-    background: #1f1f1f;
-    color: #00e676;
-    text-align: center;
-    padding: 25px;
-  }
+        .footer-links { margin-bottom: 25px; }
 
-  footer a {
-    color:#00e676;
-    text-decoration:none;
-    margin:0 10px;
-  }
+        .footer-links a {
+            color: #888;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.85rem;
+            transition: 0.3s;
+            font-weight: 500;
+        }
 
-  footer a:hover { color:#76ff03; }
+        /* EFECTO HOVER VERDE */
+        .footer-links a:hover {
+            color: var(--primary);
+            text-shadow: 0 0 8px rgba(0, 230, 118, 0.3);
+        }
 
-  @media(max-width:768px){
-    nav { flex-direction: column; gap: 10px; }
-    .container { margin: 100px 15px 50px; }
-    footer a { display: block; margin: 5px 0; }
-  }
-</style>
+        .footer-divider { color: #333; margin: 0 5px; }
+
+        .copyright {
+            color: #444;
+            font-size: 0.8rem;
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .container { margin: 100px 15px 40px; padding: 25px; }
+            nav a { margin-left: 15px; font-size: 0.8rem; }
+        }
+    </style>
 </head>
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="TopApps.html">Top Apps</a>
-  <a href="Guides.html">Guides</a>
-  <a href="Tips.html">Tips</a>
-</nav>
+<header>
+    <a href="index.html" class="logo">MMWA</a>
+    <nav>
+        <a href="TopApps.html">Apps</a>
+        <a href="Tips.html">Tips</a>
+        <a href="Guides.html">Guides</a>
+    </nav>
+</header>
 
 <div class="container">
-  <h1>Privacy Policy</h1>
-  <p>On this blog, we respect your privacy. We do not collect personal information from our visitors. However, third-party ads may use cookies to display relevant content.</p>
-  
-  <h2>Use of Ads</h2>
-  <p>Ads on this website may collect browsing data, such as cookies and IP address, to show personalized ads. We do not have direct access to personal information.</p>
+    <h1>Privacy Policy</h1>
+    <p>Last updated: March 2026</p>
+    
+    <p>At <strong>mmwa.es</strong>, accessible from https://mmwa.es, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by mmwa.es and how we use it.</p>
 
-  <h2>Data Security</h2>
-  <p>All data processed by advertising and analytics services is handled according to their own privacy policies. This site does not store personal data.</p>
+    <h2>1. Log Files</h2>
+    <p>We follow a standard procedure of using log files. These files log visitors when they visit websites. The information collected includes IP addresses, browser type, Internet Service Provider (ISP), date/time stamp, and referring pages. This information is not linked to any personally identifiable information.</p>
+
+    <h2>2. Google DoubleClick DART Cookie</h2>
+    <div class="highlight-box">
+        Google is one of the third-party vendors on our site. It uses DART cookies to serve ads to our site visitors based upon their visit to mmwa.es and other sites on the internet.
+    </div>
+    <p>Visitors may choose to decline the use of DART cookies by visiting the Google ad and content network Privacy Policy at: <a href="https://policies.google.com/technologies/ads" style="color:var(--primary); text-decoration:none;">Google Ads Policy</a></p>
+
+    <h2>3. Advertising Partners</h2>
+    <p>Third-party ad servers use technologies like cookies or Web Beacons that are used in their respective advertisements appearing on mmwa.es. They automatically receive your IP address when this occurs. These are used to measure effectiveness and personalize content.</p>
+
+    <h2>4. GDPR Data Protection Rights</h2>
+    <p>We want to ensure you are fully aware of your rights. Every user is entitled to:</p>
+    <ul>
+        <li><strong>Access:</strong> Request copies of your data.</li>
+        <li><strong>Rectification:</strong> Request correction of inaccurate information.</li>
+        <li><strong>Erasure:</strong> Request deletion of your personal data under certain conditions.</li>
+    </ul>
+
+    <h2>5. Contact Information</h2>
+    <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us at <strong>support.digitalweb@gmail.com</strong>.</p>
 </div>
 
 <footer>
-  <p>© 2026 Make Money Blog</p>
-  <p>
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="terms.html">Terms and Conditions</a>
-    <a href="cookies.html">Cookie Notice</a>
-  </p>
+    <div class="footer-links">
+        <a href="About.html">About Us</a>
+        <span class="footer-divider">|</span>
+        <a href="cookies.html">Cookie Policy</a>
+        <a href="terms.html">Terms of Use</a>
+    </div>
+    
+    <p class="copyright">
+        © 2026 mmwa.es | All Rights Reserved. <br>
+        <small style="color: #555;">Contact: support.digitalweb@gmail.com</small>
+    </p>
 </footer>
 
 </body>
