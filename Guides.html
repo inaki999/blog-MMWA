@@ -98,9 +98,38 @@
             border: 1px solid rgba(0, 230, 118, 0.2);
         }
 
-        footer { background: #080810; padding: 60px 20px; text-align: center; border-top: 1px solid #222; margin-top: 80px; }
-        .footer-links a { color: #888; text-decoration: none; margin: 0 15px; font-size: 0.85rem; }
-        .copyright { color: #444; font-size: 0.8rem; margin-top: 20px; }
+footer {
+            background: #080810;
+            padding: 60px 20px;
+            text-align: center;
+            border-top: 1px solid #222;
+            margin-top: 50px;
+        }
+
+        .footer-links { margin-bottom: 25px; }
+
+        .footer-links a {
+            color: #888;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.85rem;
+            transition: 0.3s;
+            font-weight: 500;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+            text-shadow: 0 0 8px rgba(0, 230, 118, 0.3);
+        }
+
+        .footer-divider { color: #333; margin: 0 5px; }
+
+        .copyright {
+            color: #444;
+            font-size: 0.8rem;
+            margin-top: 20px;
+            line-height: 1.6;
+        }
 
         @media (max-width: 600px) { .guide-box { padding: 30px 20px; } }
     </style>
