@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | mmwa.es</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap');
+        
+        :root { 
+            --primary: #00e676; 
+            --bg-dark: #0f0f1a; 
+            --bg-card: #1e1e30; 
+            --text-main: #f8f9fa; 
+            --text-dim: #cfd8dc; 
+            --accent: #00bfa5; 
+        }
+
+        body { 
+            margin: 0; 
+            font-family: 'Roboto', sans-serif; 
+            color: var(--text-main); 
+            background: var(--bg-dark); 
+            line-height: 1.8; 
+        }
+        
+        header { 
+            position: fixed; top: 0; width: 100%; display: flex; justify-content: space-between; align-items: center; 
+            padding: 15px 5%; background: rgba(15, 15, 26, 0.95); backdrop-filter: blur(12px); 
+            z-index: 1000; border-bottom: 1px solid rgba(255,255,255,0.05); box-sizing: border-box; 
+        }
+        .logo { font-family: 'Poppins', sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--primary); text-decoration: none; }
+        nav a { color: var(--text-main); text-decoration: none; font-weight: 500; margin-left: 25px; font-size: 0.9rem; transition: 0.3s; text-transform: uppercase; }
+        nav a:hover { color: var(--primary); }
+
+        .container { max-width: 700px; margin: 0 auto; padding: 140px 20px 80px; }
+        h1 { font-family: 'Poppins', sans-serif; font-size: 2.5rem; color: var(--primary); margin-bottom: 10px; text-align: center; }
+        .subtitle { text-align: center; color: var(--text-dim); margin-bottom: 40px; }
+
+        .contact-card { background: var(--bg-card); padding: 40px; border-radius: 24px; border: 1px solid rgba(255,255,255,0.05); }
+        .form-group { margin-bottom: 20px; }
+        label { display: block; color: var(--accent); margin-bottom: 8px; font-size: 0.9rem; }
+        
+        input, textarea { 
+            width: 100%; padding: 12px; background: #151525; border: 1px solid #333; 
+            border-radius: 10px; color: white; box-sizing: border-box; font-family: inherit;
+        }
+        
+        input:focus, textarea:focus { outline: none; border-color: var(--primary); }
+
+        .submit-btn { 
+            width: 100%; padding: 15px; background: var(--primary); color: #000; 
+            border: none; border-radius: 10px; font-weight: 700; cursor: pointer; transition: 0.3s; text-transform: uppercase;
+        }
+        .submit-btn:hover { background: #76ff03; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0, 230, 118, 0.3); }
+
+        .direct-contact { text-align: center; margin-top: 30px; color: var(--text-dim); font-size: 0.9rem; }
+        .direct-contact strong { color: var(--primary); }
+
+        /* --- FOOTER CON HOVER VERDE --- */
+        footer { 
+            background: #080810; 
+            padding: 60px 20px; 
+            text-align: center; 
+            border-top: 1px solid #222; 
+            margin-top: 50px; 
+        }
+        
+        .footer-links { margin-bottom: 25px; }
+
+        .footer-links a { 
+            color: #888; 
+            text-decoration: none; 
+            margin: 0 15px; 
+            font-size: 0.85rem; 
+            transition: 0.3s; 
+        }
+
+        /* EFECTO HOVER VERDE */
+        .footer-links a:hover { 
+            color: var(--primary); 
+            text-shadow: 0 0 8px rgba(0, 230, 118, 0.3);
+        }
+
+        .copyright { color: #444; font-size: 0.8rem; margin-top: 20px; line-height: 1.6; }
+        
+        /* Links secundarios del footer con hover */
+        .secondary-links a {
+            color: #555; 
+            text-decoration: none; 
+            font-size: 0.8rem; 
+            margin: 0 10px;
+            transition: 0.3s;
+        }
+        .secondary-links a:hover { color: var(--primary); }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">MMWA</a>
+    <nav>
+        <a href="TopApps.html">Apps</a>
+        <a href="Tips.html">Tips</a>
+        <a href="Guides.html">Guides</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Contact Me</h1>
+    <p class="subtitle">I'll get back to you at support.digitalweb@gmail.com as soon as possible.</p>
+    
+    <div class="contact-card">
+        <form action="https://formspree.io/f/TU_ID_AQUÍ" method="POST">
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="_replyto" placeholder="your@email.com" required>
+            </div>
+            <div class="form-group">
+                <label>Message</label>
+                <textarea name="message" rows="5" placeholder="How can I help you?" required></textarea>
+            </div>
+            <input type="hidden" name="_subject" value="New message from mmwa.es">
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </div>
+
+    <div class="direct-contact">
+        <p>Direct support: <strong>support.digitalweb@gmail.com</strong></p>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-links">
+        <a href="About.html">About Us</a>
+        <span style="color: #333; margin: 0 5px;">|</span>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="cookies.html">Cookie Policy</a>
+        <a href="terms.html">Terms of Use</a>
+    </div>
+    
+
+    <p class="copyright">© 2026 mmwa.es | All Rights Reserved. <br>
+    <small>Contact: support.digitalweb@gmail.com</small></p>
+</footer>
+
+</body>
+</html>
