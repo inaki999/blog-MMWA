@@ -1,177 +1,570 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Top Money Making Apps</title>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500;700&display=swap');
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>40 Best Money Making Apps 2026 | Ultimate Expert Reviews</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap');
+        :root { --primary: #00e676; --bg-dark: #0f0f1a; --bg-card: #1e1e30; --text-main: #f8f9fa; --text-dim: #cfd8dc; --accent: #00bfa5; }
+        body { margin: 0; font-family: 'Roboto', sans-serif; color: var(--text-main); background: var(--bg-dark); line-height: 1.8; }
+        
+        header { position: fixed; top: 0; width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 15px 5%; background: rgba(15, 15, 26, 0.95); backdrop-filter: blur(12px); z-index: 1000; border-bottom: 1px solid rgba(255,255,255,0.05); box-sizing: border-box; }
+        .logo { font-family: 'Poppins', sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--primary); text-decoration: none; }
+        nav a { color: var(--text-main); text-decoration: none; font-weight: 500; margin-left: 25px; font-size: 0.9rem; transition: 0.3s; text-transform: uppercase; letter-spacing: 1px; }
+        nav a:hover { color: var(--primary); }
 
-  body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    color: #eee;
-    background: linear-gradient(135deg, #121212, #1a1a2e);
-  }
+        .container { max-width: 850px; margin: 0 auto; padding: 130px 20px 80px; }
+        
+        /* HEADER SECTION WITH TOP FILTER */
+        .hero-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 50px; flex-wrap: wrap; gap: 20px; }
+        .hero-info { flex: 1; min-width: 300px; }
+        h1 { font-family: 'Poppins', sans-serif; font-size: clamp(1.8rem, 4vw, 2.6rem); color: var(--primary); margin: 0 0 10px 0; line-height: 1.2; }
+        .subtitle { color: var(--text-dim); margin: 0; font-size: 1.1rem; border-left: 3px solid var(--primary); padding-left: 15px; }
+        
+        /* POSITIONED FILTER */
+        .filter-section { min-width: 240px; }
+        .filter-label { font-size: 0.7rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700; margin-bottom: 10px; display: block; }
+        
+        .custom-select { position: relative; width: 100%; cursor: pointer; z-index: 500; }
+        .select-trigger { background: var(--bg-card); color: var(--text-main); border: 2px solid rgba(0, 230, 118, 0.2); padding: 12px 20px; border-radius: 10px; display: flex; justify-content: space-between; align-items: center; font-family: 'Poppins', sans-serif; font-size: 0.9rem; transition: 0.3s; }
+        .select-trigger:hover { border-color: var(--primary); }
+        .select-trigger::after { content: '▼'; font-size: 0.7rem; color: var(--primary); transition: 0.3s; }
+        .custom-select.open .select-trigger::after { transform: rotate(180deg); }
 
-  header {
-    background: linear-gradient(135deg, #1f1f38, #121212);
-    color: #00e676;
-    padding: 30px 20px;
-    text-align: center;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-  }
+        .select-options { position: absolute; top: calc(100% + 8px); right: 0; width: 100%; background: #2a2a45; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); overflow: hidden; display: none; box-shadow: 0 15px 40px rgba(0,0,0,0.7); }
+        .custom-select.open .select-options { display: block; animation: fadeIn 0.2s ease; }
+        .option { padding: 12px 20px; transition: 0.2s; color: var(--text-dim); font-size: 0.9rem; }
+        .option:hover { background: var(--primary); color: var(--bg-dark); }
+        .option.active { color: var(--primary); font-weight: 700; background: rgba(0, 230, 118, 0.05); }
 
-  header h1 { margin:0; font-family: 'Poppins', sans-serif; font-size: 2.8em; }
+        /* APP ENTRIES */
+        .app-entry { background: var(--bg-card); border-radius: 20px; padding: 35px; margin-bottom: 40px; border: 1px solid rgba(255,255,255,0.05); animation: fadeIn 0.5s ease forwards; }
+        .app-header { display: flex; align-items: center; gap: 20px; margin-bottom: 20px; }
+        .app-icon { font-size: 2.2rem; background: rgba(255,255,255,0.03); width: 65px; height: 65px; display: flex; align-items: center; justify-content: center; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); }
+        .tag { display: inline-block; padding: 4px 12px; background: rgba(0, 191, 165, 0.1); color: var(--accent); border-radius: 6px; font-size: 0.7rem; font-weight: bold; text-transform: uppercase; margin-bottom: 8px; }
+        .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 25px; }
+        .pc-box { padding: 15px; border-radius: 12px; font-size: 0.9rem; }
+        .pros { background: rgba(0, 230, 118, 0.05); color: #a5ffd6; border-left: 3px solid var(--primary); }
+        .cons { background: rgba(255, 82, 82, 0.05); color: #ffadad; border-left: 3px solid #ff5252; }
+        .payment-info { margin-top: 20px; padding: 15px; background: rgba(255,255,255,0.02); border-radius: 10px; font-size: 0.9rem; border: 1px solid rgba(255,255,255,0.05); }
+        .payment-info strong { color: var(--primary); }
+        
+        .ad-unit { margin: 40px 0; padding: 30px; border: 2px dashed #2a2a45; border-radius: 20px; text-align: center; color: #444; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; }
 
-  nav {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 15px 0;
-    background: rgba(30,30,50,0.95);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
-  }
+        footer {
+            background: #080810;
+            padding: 60px 20px;
+            text-align: center;
+            border-top: 1px solid #222;
+            margin-top: 50px;
+        }
 
-  nav a {
-    color:#00e676;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1em;
-    transition: color 0.3s;
-  }
+        .footer-links {
+            margin-bottom: 25px;
+        }
 
-  nav a:hover { color:#76ff03; }
+        .footer-links a {
+            color: #888;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.85rem;
+            transition: 0.3s;
+        }
 
-  .container {
-    max-width: 1000px;
-    margin: 50px auto;
-    padding: 20px;
-    position: relative; /* Para posicionar el anuncio */
-  }
+        .footer-links a:hover { color: var(--primary); }
 
-  .app {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    background: rgba(30,30,50,0.85);
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-    border-left: 6px solid #00bfa5;
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
+        .copyright {
+            color: #444;
+            font-size: 0.8rem;
+            margin-top: 20px;
+        }
 
-  .app:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.6);
-  }
-
-  .app img {
-    width: 70px;
-    height: 70px;
-    border-radius: 12px;
-    background: #1f1f38;
-    padding: 10px;
-  }
-
-  .app-content { flex: 1; }
-
-  /* Rectángulo de anuncio a la derecha */
-  .ad {
-    position: absolute;
-    top: 20px;
-    right: -250px; /* Se separa del contenido principal */
-    width: 220px;
-    height: 400px; /* Rectángulo vertical */
-    background: linear-gradient(135deg, #263238, #37474f);
-    border: 2px dashed #00e676;
-    border-radius: 12px;
-    color: #00e676;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-  }
-
-  footer {
-    text-align: center;
-    padding: 25px;
-    background: #1f1f1f;
-    color: #00e676;
-    font-family: 'Poppins', sans-serif;
-    margin-top: 40px;
-    box-shadow: 0 -2px 8px rgba(0,0,0,0.5);
-  }
-
-  @media (max-width:1024px){
-    .ad { position: relative; right: auto; top: auto; width: 90%; height: auto; margin: 20px auto; }
-  }
-
-  @media (max-width:768px){
-    .app { flex-direction: column; text-align: center; }
-  }
-</style>
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
+        @media (max-width: 650px) { .hero-header { flex-direction: column; } .filter-section { width: 100%; } .pros-cons { grid-template-columns: 1fr; } }
+    </style>
 </head>
 <body>
 
 <header>
-  <h1>Top Money Making Apps</h1>
+    <a href="index.html" class="logo">MMWA</a>
+    <nav><a href="index.html">Home</a><a href="Tips.html">Tips</a><a href="Guides.html">Guides</a></nav>
 </header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="Guides.html">Guides</a>
-  <a href="Tips.html">Tips</a>
-</nav>
-
 <div class="container">
-
-  <div class="app">
-    <img src="images/money.png" alt="Swagbucks icon">
-    <div class="app-content">
-      <h2>Swagbucks</h2>
-      <p>Earn money by doing surveys, watching videos, and shopping online. Points can be exchanged for PayPal cash or gift cards.</p>
+    <div class="hero-header">
+        <div class="hero-info">
+            <h1>Top 40 Verified Platforms 2026</h1>
+            <p class="subtitle">Complete expert breakdown of digital income streams.</p>
+        </div>
+        <div class="filter-section">
+            <span class="filter-label">Filter by Payout Method:</span>
+            <div class="custom-select" id="paymentSelect">
+                <div class="select-trigger">All Payout Methods</div>
+                <div class="select-options">
+                    <div class="option active" data-filter="all">All Payout Methods</div>
+                    <div class="option" data-filter="paypal">PayPal</div>
+                    <div class="option" data-filter="bank">Bank Transfer</div>
+                    <div class="option" data-filter="crypto">Crypto / Tokens</div>
+                    <div class="option" data-filter="gift">Gift Cards</div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <div class="app">
-    <img src="images/camera_512.png" alt="Foap icon">
-    <div class="app-content">
-      <h2>Foap</h2>
-      <p>Sell photos taken with your phone. Companies buy real images, and you earn money each time someone purchases a photo.</p>
-    </div>
-  </div>
+    <article class="app-entry" data-pay="paypal bank">
+        <div class="app-header"><div class="app-icon">🗣️</div><div><span class="tag">Language Teaching</span><h2>italki</h2></div></div>
+        <p>italki is a global community that connects language learners with teachers for 1-on-1 online lessons. You can apply as a "Professional Teacher" if you have a certificate, or a "Community Tutor" if you simply want to help others practice your native language through conversation.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> Full control over your hourly rate (typically $10-$30) and no minimum hours required.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> Competition is high for popular languages like English or Spanish.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> Payoneer, PayPal, or Bank Transfer. Minimum withdrawal: $30.</div>
+    </article>
 
-  <div class="app">
-    <img src="images/work.png" alt="Fiverr icon">
-    <div class="app-content">
-      <h2>Fiverr</h2>
-      <p>Offer services like writing, design, or editing. Start small and grow your income over time.</p>
-    </div>
-  </div>
+    <article class="app-entry" data-pay="paypal">
+        <div class="app-header"><div class="app-icon">✍️</div><div><span class="tag">Translation</span><h2>Gengo</h2></div></div>
+        <p>Owned by Lionbridge, Gengo provides a high-volume platform for translators. Once you pass their proficiency test, you gain access to a dashboard of "jobs" ranging from simple emails to complex technical manuals.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> Consistent flow of work for major language pairs. User-friendly workbench.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> Pay per word can be lower than private agencies.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> PayPal or Payoneer. Payments processed twice a month.</div>
+    </article>
 
-  <div class="app">
-    <img src="images/card.png" alt="Rakuten icon">
-    <div class="app-content">
-      <h2>Rakuten</h2>
-      <p>Earn cashback when you shop online. Compare offers to maximize your earnings.</p>
-    </div>
-  </div>
+    <article class="app-entry" data-pay="paypal">
+        <div class="app-header"><div class="app-icon">🎓</div><div><span class="tag">Research Surveys</span><h2>Prolific</h2></div></div>
+        <p>Prolific is the gold standard for surveys because it’s used by university researchers. You never get "screened out" after starting a survey, and the platform enforces a minimum pay of roughly $8/hour.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> High ethical standards. Instant cashouts after your first few payments.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> Strict IP address rules; using a VPN will get you banned.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> PayPal exclusively. Minimum withdrawal: £6.</div>
+    </article>
 
-  <!-- Rectángulo de anuncio -->
-  <div class="ad">
-    Ad Space (Google AdSense)
-  </div>
+    <article class="app-entry" data-pay="paypal">
+        <div class="app-header"><div class="app-icon">💻</div><div><span class="tag">UX Research</span><h2>UserTesting</h2></div></div>
+        <p>UserTesting pays you to share your perspective on products. You’ll be asked to complete a series of tasks on a website or app while recording your screen and thinking out loud.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> High pay for short tasks ($10 for 20 mins, up to $60 for live interviews).</div>
+            <div class="pc-box cons"><strong>Cons:</strong> You won't qualify for every "screener" you take.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> PayPal. Paid exactly 7 days after task completion.</div>
+    </article>
+
+    <article class="app-entry" data-pay="paypal">
+        <div class="app-header"><div class="app-icon">🤖</div><div><span class="tag">AI Training</span><h2>Remotasks</h2></div></div>
+        <p>Specializing in LiDAR and image annotation, Remotasks helps train self-driving cars and AI models. Tasks include drawing boxes around traffic signs or identifying objects in 3D maps.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> Weekly payments with no minimum. Great for learning about AI.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> LiDAR tasks are complex and time-consuming.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> PayPal or Airtm. Paid every Tuesday.</div>
+    </article>
+
+    <article class="app-entry" data-pay="paypal bank">
+        <div class="app-header"><div class="app-icon">💼</div><div><span class="tag">Freelance</span><h2>Upwork</h2></div></div>
+        <p>Upwork is a professional-grade marketplace. Whether you are a bookkeeper, developer, or virtual assistant, you bid on contracts and build long-term relationships with global businesses.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> Ability to earn a full-time salary. Built-in payment protection.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> Costs "Connects" (credits) to apply for jobs.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> Direct Bank Transfer, PayPal, or Payoneer.</div>
+    </article>
+
+    <article class="app-entry" data-pay="crypto gift">
+        <div class="app-header"><div class="app-icon">👟</div><div><span class="tag">Passive Income</span><h2>Sweatcoin</h2></div></div>
+        <p>By converting your daily movement into currency, Sweatcoin aims to reduce health costs globally. In 2026, the app has evolved into a crypto-ecosystem where your steps generate SWEAT tokens.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> Zero effort required. Encourages walking. Safe and verified.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> High-tier rewards require massive step counts.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> Product marketplace, Gift cards, or SWEAT crypto tokens.</div>
+    </article>
+
+    <article class="app-entry" data-pay="paypal">
+        <div class="app-header"><div class="app-icon">🎙️</div><div><span class="tag">Transcription</span><h2>Rev</h2></div></div>
+        <p>Rev is a transcription service used by journalists and podcasters. As a "Revver," you listen to audio and type out what you hear according to their style guide.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> Work whenever you want. Great for fast typists.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> Low pay for beginners until you improve your accuracy score.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> PayPal. Paid every Monday.</div>
+    </article>
+
+    <div class="ad-unit">Advertisement Space</div>
+
+    <article class="app-entry" data-pay="paypal">
+        <div class="app-header"><div class="app-icon">🛍️</div><div><span class="tag">Cashback</span><h2>Rakuten</h2></div></div>
+        <p>Rakuten partners with over 3,500 stores. When you click through their app before buying, the store pays Rakuten a commission, and they share half of that with you.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> Significant savings on major purchases. $10+ sign-up bonuses.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> Encourages spending to "save" money.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> PayPal or Check. Paid every 3 months.</div>
+    </article>
+
+    <article class="app-entry" data-pay="paypal">
+        <div class="app-header"><div class="app-icon">📸</div><div><span class="tag">Stock Photography</span><h2>Shutterstock</h2></div></div>
+        <p>Shutterstock allows photographers to sell their work to a global audience. Every time a designer or blogger licenses your photo, you earn a royalty.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> True passive income. Your portfolio works while you sleep.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> You need high-quality, commercial-ready photos.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> PayPal, Skrill, or Payoneer. Threshold: $35.</div>
+    </article>
+
+    <article class="app-entry" data-pay="bank">
+        <div class="app-header"><div class="app-icon">🛠️</div><div><span class="tag">Local Services</span><h2>TaskRabbit</h2></div></div>
+        <p>Now owned by IKEA, TaskRabbit is the best app for finding local odd jobs. You can offer services like furniture assembly, grocery delivery, or yard work.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> High hourly rates ($25-$80/hr). Keep 100% of your tips.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> $25 registration fee in some cities.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> Direct Deposit to your bank account.</div>
+    </article>
+
+    <article class="app-entry" data-pay="paypal gift">
+        <div class="app-header"><div class="app-icon">📊</div><div><span class="tag">Multi-Task</span><h2>Swagbucks</h2></div></div>
+        <p>One of the oldest GPT (Get Paid To) sites. You earn "SB" for taking surveys, watching curated videos, and even playing mobile games.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> Low cashout threshold ($3). Huge variety of gift cards.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> Survey disqualifications can be frustrating.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> PayPal or Gift cards (Amazon, Walmart).</div>
+    </article>
+
+    <article class="app-entry" data-pay="paypal crypto">
+        <div class="app-header"><div class="app-icon">🌐</div><div><span class="tag">Internet Sharing</span><h2>Honeygain</h2></div></div>
+        <p>Honeygain allows you to reach your unused internet’s full potential by making your device a gateway for companies to conduct market research.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> The definition of zero-effort passive income. Secure encryption.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> May slow down your connection if your speed is low.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> PayPal or JMPT (Crypto). Threshold: $20.</div>
+    </article>
+
+    <article class="app-entry" data-pay="paypal">
+        <div class="app-header"><div class="app-icon">🎨</div><div><span class="tag">Graphic Design</span><h2>99designs</h2></div></div>
+        <p>99designs operates on a contest model where designers submit concepts. The winner gets the prize. Incredible for talented artists.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> High payouts for winners. Guaranteed payment for chosen designs.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> You might work on a project and not get paid if not selected.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> PayPal or Payoneer.</div>
+    </article>
+
+    <article class="app-entry" data-pay="paypal crypto">
+        <div class="app-header"><div class="app-icon">📍</div><div><span class="tag">Field Research</span><h2>Premise</h2></div></div>
+        <p>Premise uses contributors to map the world in real-time. Tasks often involve walking to a point of interest and answering questions with a photo.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> Pay per task is good for the time spent. Localized work.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> High battery consumption due to GPS usage.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> PayPal, Bitcoin, or Mobile Top-up.</div>
+    </article>
+
+    <article class="app-entry" data-pay="paypal bank">
+        <div class="app-header"><div class="app-icon">🚀</div><div><span class="tag">Micro-Jobs</span><h2>Fiverr</h2></div></div>
+        <p>Fiverr is a massive marketplace where freelancers can offer digital services starting at $5. You can sell anything from voiceovers and logo design to coding.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> Clients come to you. Very high earning potential once established.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> The platform takes a 20% fee from your earnings.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> PayPal, Payoneer, or Bank Transfer.</div>
+    </article>
+
+    <article class="app-entry" data-pay="bank">
+        <div class="app-header"><div class="app-icon">🐶</div><div><span class="tag">Pet Care</span><h2>Rover</h2></div></div>
+        <p>Rover connects pet owners with local sitters and dog walkers. You can build a profile offering boarding, house sitting, or daily walks.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> Set your own schedule, rates, and the sizes of pets you prefer.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> Rover takes a 20% cut. Requires passing a background check.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> Stripe (Direct deposit to your bank account).</div>
+    </article>
+
+    <article class="app-entry" data-pay="paypal">
+        <div class="app-header"><div class="app-icon">🏢</div><div><span class="tag">B2B Research</span><h2>Respondent</h2></div></div>
+        <p>Respondent focuses on B2B market research. Companies pay premium rates to interview specific professionals like developers or business owners.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> Extremely high payouts (often $100 to $300+ per hour).</div>
+            <div class="pc-box cons"><strong>Cons:</strong> Strict screening criteria. Hard to qualify for every study.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> PayPal. Paid automatically minus a 5% fee.</div>
+    </article>
+
+    <article class="app-entry" data-pay="paypal bank">
+        <div class="app-header"><div class="app-icon">📱</div><div><span class="tag">Reselling</span><h2>Decluttr</h2></div></div>
+        <p>Decluttr provides a fast way to sell old tech, smartphones, and games. You simply scan the barcode to get an instant valuation.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> Instant guaranteed pricing and free shipping labels.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> Valuations are usually lower than direct selling on eBay.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> Direct Deposit or PayPal.</div>
+    </article>
+
+    <article class="app-entry" data-pay="gift">
+        <div class="app-header"><div class="app-icon">🎮</div><div><span class="tag">Gaming Rewards</span><h2>Mistplay</h2></div></div>
+        <p>Mistplay rewards you for discovering and playing new mobile games. The more you play, the more units you earn for rewards.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> Fun way to earn rewards doing something you enjoy.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> Low overall earning potential. Android exclusive.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> Gift cards exclusively (Amazon, Google Play, Visa).</div>
+    </article>
+
+    <article class="app-entry" data-pay="crypto">
+        <div class="app-header"><div class="app-icon">🧩</div><div><span class="tag">Microtasks</span><h2>JumpTask</h2></div></div>
+        <p>JumpTask connects you with various microtasks ranging from game testing to solving captchas. It's the primary partner for Honeygain users to boost earnings.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> Decentralized tasks with immediate crypto availability.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> JMPT token price can be volatile.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> JMPT (Crypto). No minimum withdrawal for some tasks.</div>
+    </article>
+
+    <article class="app-entry" data-pay="paypal gift">
+        <div class="app-header"><div class="app-icon">✉️</div><div><span class="tag">Rewards</span><h2>InboxDollars</h2></div></div>
+        <p>InboxDollars offers cash for watching videos, reading emails, and taking surveys. It’s one of the few that uses actual dollar amounts instead of complex point systems.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> Very intuitive. $5 bonus for new members.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> Higher cashout threshold ($15) compared to others.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> PayPal or Gift Cards.</div>
+    </article>
+
+    <article class="app-entry" data-pay="paypal gift">
+        <div class="app-header"><div class="app-icon">📈</div><div><span class="tag">Micro Surveys</span><h2>Google Opinion Rewards</h2></div></div>
+        <p>Directly from Google, this app sends short, 3-question surveys about your local visits or YouTube history. It's the most reliable survey app for quick credits.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> Takes seconds to complete. No screen-outs.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> Limited survey volume per month.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> PayPal (iOS) or Play Store Credit (Android).</div>
+    </article>
+
+    <article class="app-entry" data-pay="paypal crypto gift">
+        <div class="app-header"><div class="app-icon">💎</div><div><span class="tag">App Testing</span><h2>FeaturePoints</h2></div></div>
+        <p>Earn points by trying free apps for just a few minutes. You can also get cashback from retailers like Walmart and Macy's through their integrated portal.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> 50% referral bonus for life. Wide payout options.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> Points expire if the app is inactive for 60 days.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> PayPal, Bitcoin, or Gift Cards.</div>
+    </article>
+
+    <article class="app-entry" data-pay="paypal bank">
+        <div class="app-header"><div class="app-icon">📶</div><div><span class="tag">Passive Sharing</span><h2>Pawns.app</h2></div></div>
+        <p>Pawns.app turns your internet connection into a source of income. It's unique for its low payout threshold and global availability.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> Lowest payout minimum in the industry ($5).</div>
+            <div class="pc-box cons"><strong>Cons:</strong> Earning speed depends on your location's demand.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> PayPal, BTC, or Visa Cards.</div>
+    </article>
+
+    <article class="app-entry" data-pay="paypal gift">
+        <div class="app-header"><div class="app-icon">🌍</div><div><span class="tag">Task Panel</span><h2>ySense</h2></div></div>
+        <p>ySense is a global leader in online rewards. It specializes in high-paying offers from brands that want you to test their services or products.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> Available in almost every country. Reliable payments for years.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> Surveys can be long for the reward offered.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> PayPal, Payoneer, or Skrill.</div>
+    </article>
+
+    <article class="app-entry" data-pay="paypal bank">
+        <div class="app-header"><div class="app-icon">🤖</div><div><span class="tag">AI Verification</span><h2>Toloka</h2></div></div>
+        <p>Perform simple tasks like checking if images match or if search results are relevant. These tasks help train the world's leading AI models.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> Unlimited tasks. Training provided for every job.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> Requires attention to detail to avoid being blocked.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> PayPal or Payoneer. Instant withdrawals.</div>
+    </article>
+
+    <article class="app-entry" data-pay="paypal crypto gift">
+        <div class="app-header"><div class="app-icon">🤑</div><div><span class="tag">Rapid Earning</span><h2>Freecash</h2></div></div>
+        <p>Freecash is currently the highest-paying GPT site in 2026. Users earn by testing apps, reaching levels in mobile games, and completing high-tier surveys.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> Huge daily bonuses. Massive crypto selection.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> Offerwalls can sometimes take 24h to verify completions.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> PayPal, Stake, BTC, ETH, and Amazon.</div>
+    </article>
+
+    <article class="app-entry" data-pay="paypal bank">
+        <div class="app-header"><div class="app-icon">👷</div><div><span class="tag">Crowdsourcing</span><h2>Clickworker</h2></div></div>
+        <p>Clickworker focuses on larger data projects. It provides access to UHRS, where you can earn significant amounts by validating search engine data.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> Professional platform. High task volume for dedicated workers.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> Onboarding process is more strict than casual apps.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> Bank Transfer or PayPal. Paid weekly.</div>
+    </article>
+
+    <article class="app-entry" data-pay="paypal">
+        <div class="app-header"><div class="app-icon">👁️</div><div><span class="tag">Quality Surveys</span><h2>PaidViewpoint</h2></div></div>
+        <p>The only survey platform with a "TraitScore." As you build trust, your pay per survey increases. They never kick you out once you start.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> 100% completion rate. No waste of time.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> Initially limited surveys until your score rises.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> PayPal. Threshold: $15.</div>
+    </article>
+
+    <article class="app-entry" data-pay="paypal bank">
+        <div class="app-header"><div class="app-icon">⚙️</div><div><span class="tag">Web Testing</span><h2>Microworkers</h2></div></div>
+        <p>Small tasks that take less than a minute. Jobs include social media interactions, website testing, and data entry for small businesses.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> Constant flow of work 24/7. Simple requirements.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> Interface is built for functionality, not beauty.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> PayPal or Skrill. Minimum $9.</div>
+    </article>
+
+    <article class="app-entry" data-pay="paypal gift">
+        <div class="app-header"><div class="app-icon">📊</div><div><span class="tag">Trust Panel</span><h2>Survey Junkie</h2></div></div>
+        <p>A classic platform for sharing your opinion. By completing your profile accurately, you get targeted surveys that pay between $0.50 and $3.00 each.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> One of the highest trust ratings online. Fast support.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> Primarily for US, CA, and AU residents.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> PayPal or Instant Gift Cards.</div>
+    </article>
+
+    <article class="app-entry" data-pay="paypal bank">
+        <div class="app-header"><div class="app-icon">💼</div><div><span class="tag">Multi-Earning</span><h2>Paidwork</h2></div></div>
+        <p>Select how you want to earn: playing games, watching ads, or online shopping. It's a comprehensive mobile office for side income.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> Very modern app design. Clear instructions.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> Games require a lot of time for high payouts.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> Bank Transfer, PayPal, or Revolut.</div>
+    </article>
+
+    <article class="app-entry" data-pay="paypal gift">
+        <div class="app-header"><div class="app-icon">📢</div><div><span class="tag">Community</span><h2>Toluna Influencers</h2></div></div>
+        <p>Join millions of people who influence global brands. Toluna offers interactive polls and community games along with traditional surveys.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> Fun, community-driven experience. Easy to qualify.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> Point-to-cash conversion is slightly complex.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> PayPal, Amazon, or Starbucks vouchers.</div>
+    </article>
+
+<article class="app-entry" data-pay="gift">
+        <div class="app-header">
+            <div class="app-icon">🌐</div>
+            <div>
+                <span class="tag">Search Rewards</span>
+                <h2>Microsoft Rewards</h2>
+            </div>
+        </div>
+        <p>Historically linked to Internet Explorer and now integrated into Microsoft Edge, this platform grants you points for every search you perform on Bing. It is a seamless way to accumulate value while browsing the web as you normally would.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> Completely passive if you use it as your main browser. No tasks required.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> Daily search limits and restricted to Microsoft's ecosystem.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> Gift cards (Amazon, Xbox, Walmart) and Sweepstakes entries.</div>
+    </article>
+
+    <article class="app-entry" data-pay="paypal">
+        <div class="app-header"><div class="app-icon">🖱️</div><div><span class="tag">SEO Tasks</span><h2>ClicksPaid</h2></div></div>
+        <p>Companies pay you to search for their site on Google and click their link. This helps their search engine ranking while you get paid.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> Easiest task possible. Takes 30 seconds.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> Very limited daily tasks per user.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> PayPal. Paid on the 1st of every month.</div>
+    </article>
+
+    <article class="app-entry" data-pay="paypal bank">
+        <div class="app-header"><div class="app-icon">👟</div><div><span class="tag">Step Rewards</span><h2>WeWard</h2></div></div>
+        <p>Walk to earn Wards. You can then redeem these Wards for cash, gifts, or even donate them to charities. It’s the ultimate health-and-wealth combo.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> Integrates with Apple Health and Google Fit.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> High payout threshold for bank transfers.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> Bank Transfer or PayPal.</div>
+    </article>
+
+    <article class="app-entry" data-pay="paypal gift">
+        <div class="app-header"><div class="app-icon">📱</div><div><span class="tag">Screen Data</span><h2>MobileXpression</h2></div></div>
+        <p>An elite market research panel that pays you to simply keep the app installed on your phone. It anonymously monitors how you use the internet.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> 100% passive. Earn a gift card after just one week.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> Requires a VPN profile to be installed for tracking.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> Amazon and retail Gift Cards.</div>
+    </article>
+
+    <article class="app-entry" data-pay="paypal">
+        <div class="app-header"><div class="app-icon">📸</div><div><span class="tag">Local Photos</span><h2>Field Agent</h2></div></div>
+        <p>Be a "mystery shopper" or auditor. Walk into a store, take a photo of a specific display, and answer a couple of questions for quick cash.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> High pay per task ($3 - $12). Real cash, not points.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> Jobs go very fast in busy cities.</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> PayPal or Bank Deposit.</div>
+    </article>
+
+    <article class="app-entry" data-pay="crypto">
+        <div class="app-header"><div class="app-icon">🦁</div><div><span class="tag">Private Browsing</span><h2>Brave Rewards</h2></div></div>
+        <p>By using the Brave Browser, you earn BAT tokens for seeing privacy-respecting ads. It’s the standard for decentralized web income in 2026.</p>
+        <div class="pros-cons">
+            <div class="pc-box pros"><strong>Pros:</strong> Fast, private browser. No extra effort needed.</div>
+            <div class="pc-box cons"><strong>Cons:</strong> Monthly earnings are usually low ($2-$5).</div>
+        </div>
+        <div class="payment-info"><strong>Payout:</strong> BAT tokens (Uphold or Gemini wallet).</div>
+    </article>
 
 </div>
 
 <footer>
-  <p>© 2026 Make Money Blog</p>
+    <div class="footer-links">
+        <a href="About.html">About Us</a>
+        <a href="Contact.html">Contact Us</a>
+        <span style="color: #333; margin: 0 5px;">|</span>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="cookies.html">Cookie Policy</a>
+        <a href="terms.html">Terms of Use</a>
+    </div>
+    <p class="copyright">© 2026 mmwa.es | All Rights Reserved. <br>
+    <small>Your definitive resource for the digital gig economy.</small></p>
 </footer>
+
+<script>
+    const select = document.getElementById('paymentSelect');
+    const trigger = select.querySelector('.select-trigger');
+    const options = select.querySelectorAll('.option');
+    const apps = document.querySelectorAll('.app-entry');
+
+    trigger.addEventListener('click', () => select.classList.toggle('open'));
+
+    options.forEach(option => {
+        option.addEventListener('click', () => {
+            const filterValue = option.getAttribute('data-filter');
+            trigger.innerText = option.innerText;
+            options.forEach(opt => opt.classList.remove('active'));
+            option.classList.add('active');
+            select.classList.remove('open');
+
+            apps.forEach(app => {
+                const pay = app.getAttribute('data-pay');
+                if (filterValue === 'all' || pay.includes(filterValue)) {
+                    app.style.display = 'block';
+                    app.style.animation = 'fadeIn 0.3s ease forwards';
+                } else {
+                    app.style.display = 'none';
+                }
+            });
+        });
+    });
+
+    window.addEventListener('click', (e) => { if (!select.contains(e.target)) select.classList.remove('open'); });
+</script>
 
 </body>
 </html>
